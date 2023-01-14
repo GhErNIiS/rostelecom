@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+body input {
+  outline: none;
+}
+body .wrapper {
+  width: 1400px;
+  margin: 0 auto;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+body header {
+  border-bottom: 1px solid rgba(16, 24, 40, 0.1);
+  padding-bottom: 11px;
+}
+body header .wrapper .header_content {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+body header .wrapper .header_content .header_nav {
+  color: #575D68;
+  padding-top: 15px;
+  margin-left: 27px;
+  display: flex;
+  gap: 20px;
+}
+body main .wrapper .title {
+  margin-top: 80px;
+  font-size: 22px;
+  font-weight: 500;
+}
+body main .wrapper .selector {
+  width: 1035px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  display: flex;
+  border-radius: 50px;
+  border: 1px solid rgba(16, 24, 40, 0.1);
+}
+body main .wrapper .selector p {
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  padding: 12px 24px;
+}
+body main .wrapper .selector p:hover {
+  color: #ff4f12;
+}
+body main .wrapper .selector :first-child {
+  background-color: #ff4f12;
+  border-radius: 50px;
+  color: #fff;
+}
+body main .wrapper .selector :first-child:hover {
+  color: #fff;
+}
+body main .wrapper .cards {
+  margin-top: 50px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+body main .wrapper .cards .item {
+  border-radius: 10px;
+  width: 300px;
+  padding: 12px 20px;
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
+  font-size: 22px;
+  font-weight: 500;
+}
+body main .wrapper .cards .item .name_rate {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+body main .wrapper .cards .item .name_rate .advantages {
+  font-size: 14px;
+  font-weight: 400;
+}
+body main .wrapper .cards .item .name_rate .advantages :last-child {
+  font-size: 12px;
+  opacity: 0.5;
+}
+body main .wrapper .cards .item .card_desc {
+  margin: 20px 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+body main .wrapper .cards .item .card_price {
+  justify-content: end;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+}
+body main .wrapper .cards .item .card_price .wrapp {
+  margin-left: 5px;
+  font-size: 14px;
+  opacity: 0.5;
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+}
+body main .wrapper .cards .item button {
+  width: 100%;
+  height: 52px;
+  background-color: #ff4f12;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+body .payment {
+  background-color: #f8f8f8;
+  margin-top: 150px;
+}
+body .payment .wrapper .title {
+  font-size: 36px;
+  font-weight: 500;
+}
+body .payment .wrapper .title .desc {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+body .payment .wrapper .payment_cards {
+  margin-top: 30px;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .payment .wrapper .payment_cards .form_payment {
+  background-color: #fff;
+  width: 49%;
+  padding: 55px 40px;
+  border-radius: 10px;
+}
+body .payment .wrapper .payment_cards .form_payment .input_form .title {
+  font-size: 22px;
+  font-weight: 500;
+}
+body .payment .wrapper .payment_cards .form_payment .input_form .form {
+  margin-top: 10px;
+}
+body .payment .wrapper .payment_cards .form_payment .input_form .form input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  color: rgba(16, 24, 40, 0.7);
+}
+body .payment .wrapper .payment_cards .form_payment .input_form .form .u_in {
+  margin-bottom: 35px;
+  opacity: 0.5;
+}
+body .payment .wrapper .payment_cards .form_payment .input_form button {
+  background-color: #ff4f12;
+  padding: 16px 30px;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+}
+body .payment .wrapper .payment_cards .aside_items {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .payment .wrapper .payment_cards .aside_items .aside_card {
+  height: 192px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 32px 52px 32px 32px;
+  display: flex;
+  gap: 28px;
+}
+body .payment .wrapper .payment_cards .aside_items .aside_card .aside_card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(16, 24, 40, 0.5);
+}
+body .payment .wrapper .payment_cards .aside_items .aside_card .aside_card-content :first-child {
+  font-size: 22px;
+  font-weight: 500;
+  color: #000;
+}
+body .popular_services .wrapper .title {
+  font-size: 36px;
+  font-weight: 500;
+}
+body .popular_services .wrapper .services_cards {
+  display: flex;
+  justify-content: space-between;
+}
+body .popular_services .wrapper .services_cards .service_item {
+  margin-top: 40px;
+  width: 329px;
+}
+body .popular_services .wrapper .services_cards .service_item img {
+  border-radius: 10px;
+}
+body .popular_services .wrapper .services_cards .service_item .content .image_content {
+  margin-top: 24px;
+  font-size: 22px;
+  font-weight: 500;
+}
+body .popular_services .wrapper .services_cards .service_item .content .image_content-par {
+  margin-top: 12px;
+  font-size: 16px;
+  opacity: 0.5;
+  font-weight: 400;
+}
+body .special_offer {
+  margin-top: 190px;
+  margin-bottom: 100px;
+}
+body .special_offer .wrapper .title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 36px;
+  font-weight: 500;
+}
+body .special_offer .wrapper .offer_cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+body .special_offer .wrapper .offer_cards .offer_item {
+  width: 445px;
+}
+body .special_offer .wrapper .offer_cards .offer_item img {
+  border-radius: 10px;
+}
+body .special_offer .wrapper .offer_cards .offer_item .image_content {
+  margin-top: 24px;
+  font-size: 22px;
+}
+body .special_offer .wrapper .offer_cards .offer_item .image_content-par {
+  margin-top: 12px;
+  font-size: 16px;
+  opacity: 0.5;
+}
+body .login_main {
+  display: flex;
+}
+body .login_main .left_block {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f5;
+  width: 50%;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  gap: 30px;
+}
+body .login_main .left_block .desc {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+body .login_main .left_block .icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: #fff;
+}
+body .login_main .left_block .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .login_main .rigth_block {
+  padding: 120px 220px;
+  width: 50%;
+}
+body .login_main .rigth_block .title {
+  font-size: 28px;
+  font-weight: 700;
+}
+body .login_main .rigth_block .selector {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+body .login_main .rigth_block input {
+  width: 100%;
+  height: 50px;
+  background-color: #f3f3f3;
+  border: none;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  opacity: 0.5;
+}
+body .login_main .rigth_block .navigator {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+}
+body .login_main .rigth_block .navigator input {
+  height: 20px;
+  width: 20px;
+}
+body .login_main .rigth_block button {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  background-color: #ff4f12;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+body .login_main .rigth_block .last {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+  line-height: 22px;
+}
+body .login_main .rigth_block .last span {
+  color: #ff4f12;
+}
+body footer {
+  border-top: 1px solid rgba(16, 24, 40, 0.1);
+  padding: 40px;
+}
+body footer .wrapper .footer_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: 400;
+}
+body footer .wrapper .footer_content :nth-child(2) {
+  width: 678px;
+}
+body footer .wrapper .footer_content span {
+  opacity: 1;
+  font-size: 24px;
+  font-weight: 500;
+}/*# sourceMappingURL=index.css.map */
